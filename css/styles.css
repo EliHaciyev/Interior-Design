@@ -3,7 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+.d-none {
+  display: none;
+}
 body {
   margin: 0;
   padding: 0;
@@ -218,6 +220,7 @@ h2 {
   top: 0;
   right: 0;
   bottom: 0;
+  background-color:#F6D5A7;
 }
 
 .header-slider-wrapper img {
@@ -243,5 +246,22 @@ h2 {
   left: 48px;
   bottom: 49px;
   z-index: 3;
+}
+.header-slider__nav {
+  position: absolute;
+  bottom: 35px;
+  right: 81px;
+  z-index: 4;
+}
+.slider-next, .slider-prev {
+  width: 64px;
+  height: 62px;
+  border: 1px solid #fff;
+}
+.slider-next {
+  margin-right: 15px;
+}
+.slider-prev svg {
+  transform: rotate(180deg);
 }
 
