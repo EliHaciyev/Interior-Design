@@ -18,7 +18,14 @@ $('.slider-prev').click(function() {
 })
 
 Fancybox.bind("[data-fancybox]", {
-  // Your custom options
-});
+   Thumbs: false,
+    Toolbar: {
+    display: {
+      left: ["infobar"],
+      right: ["close"],
+    },
+  },
+}
+);
 
 });
