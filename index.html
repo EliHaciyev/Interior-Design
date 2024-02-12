@@ -11,14 +11,14 @@
 </head>
 <body>
         <!-- HEADER -->
-  <header class="header">
+  <header class="header d-none">
     <!-- HEADER-TOP -->
     <div class="header-top">
       <div class="container">
         <nav class="header-nav">
-          <a class="text-upper" href="#!">ОБО МНЕ</a>
-          <a class="text-upper" href="#!">ПОРТФОЛИО</a>
-          <a class="text-upper" href="#!">КОНТАКТЫ</a>
+          <a class="text-upper" href="#about">ОБО МНЕ</a>
+          <a class="text-upper" href="#portfolio">ПОРТФОЛИО</a>
+          <a class="text-upper" href="#contacts">КОНТАКТЫ</a>
         </nav>
       </div>
 
@@ -77,7 +77,8 @@
 
         <!-- MAIN -->
   <main class="main">
-    <section class="portfolio">
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
       <div class="container">
         <div class="portfolio__title">
           <h2 class="h2">Портфолио</h2>        
@@ -113,10 +114,147 @@
         </div>
       </div>
     </section>
+    <!-- about -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__title">
+          <h2 class="h2">Обо Мне</h2>
+        </div>
+        <div class="about__content">
+          <div class="about__img">
+            <img src="./img/my-foto.jpg" alt="">
+          </div>
+          <div class="about__desc">
+            <div class="about__text">
+          <p>
+            Более 20-ти лет активной работы дизайнером интерьера позволили мне накопить ценнейшие опыт и знания для создания роскошных 
+            и респектабельных интерьеров, отвечающих всем требованиям даже самого взыскательного Заказчика, превращая его неясные фантазии и желания в настоящие эксклюзивные интерьеры любой сложности, в различных стилистических направлениях. 
+          </p>
+          <p>
+            Моё творческое кредо в профессии: «Дизайнера в проекте должно быть как можно меньше, а самая важная    деталь при создании интерьера — это идея и искреннее отношение к проекту
+              и заказчику».
+          </p>
+            </div>
+            <div class="about__statistic">
+              <div class="about__statistic-item">
+                <p class="num">20</p>
+                <span>Лет опыта</span>
+              </div>
+              
+              <div class="about__statistic-item">
+                <p class="num">300</p>
+                <span>Реализованных проектов</span>
+              </div>
+            </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <!-- contacts -->
+    <section class="contacts" id="contacts">
+      <div class="container">
+        <div class="contacts__title">
+          <h2 class="h2">Контакты</h2>
+        </div>
+        <div class="contacts__content">
+          <div class="contacts-form-wrapper">
+            <form class="contacts-form">
+              <div class="form-item">
+                <input type="text" name="userName" placeholder="Ваше имя">
+              </div>
+               <div class="form-item">
+                <input type="email" name="email" placeholder="Ваше email">
+              </div>
+              <div class="form-item">
+                <textarea name="message" placeholder="Сообщение"></textarea>
+            </div>
+             <div class="form-item">
+              <button type="submit" class="btn">Отправить</button>
+            </div>
+            </form>
+          </div>
+          <!-- contacts-list -->
+          <div class="contacts-list">
+            <div class="contacts-item">
+              <div class="contacts__icon">
+                <svg class="svg-phone">
+                  <use href="./img/svg-sprite.svg#svg-phone">
+                </svg>
+              </div>
+              <div class="contacts__text">
+                <p class="text-upper">ТЕЛЕФОН:</p>
+                <a href="tel:+994708108151">+ 994 810-81-51</a>
+              </div>
+            </div>
+            <div class="contacts-item">
+              <div class="contacts__icon">
+                <svg class="svg-inst">
+                  <use href="./img/svg-sprite.svg#svg-inst">
+                </svg>
+              </div>
+              <div class="contacts__text">
+                <p class="text-upper">INSTAGRAM::</p>
+                <a href="#!">alihaciyev_457</a>
+              </div>
+            </div>
+               <div class="contacts-item">
+              <div class="contacts__icon">
+                <svg class="svg-mail">
+                  <use href="./img/svg-sprite.svg#svg-mail">
+                </svg>
+              </div>
+              <div class="contacts__text">
+                <p class="text-upper">Почта:</p>
+                <a href="mailto:heli25851@gmail.com">heli25851@gmail.com</a>
+              </div>
+            </div>
+               <div class="contacts-item">
+              <div class="contacts__icon">
+                <svg class="svg-local">
+                  <use href="./img/svg-sprite.svg#svg-local">
+                </svg>
+              </div>
+              <div class="contacts__text">
+                <p class="text-upper">АДРЕС:</p>
+                <address>Baki Nizami 93</address>
+              </div>
+            </div>
+               <div class="contacts-item">
+              <div class="contacts__icon">
+                <svg class="svg-pinter">
+                  <use href="./img/svg-sprite.svg#svg-pinter">
+                </svg>
+              </div>
+              <div class="contacts__text">
+                <p class="text-upper">PINTEREST:</p>
+                <a href="https://www.pinterest.com/" target="_blank">https://www.pinterest.com/</a>
+              </div>
+            </div>
+              <div class="contacts-item">
+              <div class="contacts__icon">
+                <svg class="svg-behance">
+                  <use href="./img/svg-sprite.svg#svg-behance">
+                </svg>
+              </div>
+              <div class="contacts__text">
+                <p class="text-upper">BEHANCE:</p>
+                <a href="www.behance.net/elihaciyev" target="_blank">www.behance.net/elihaciyev</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
         <!-- FOOTER -->
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <p>
+      	&copy; 2020 Haciyev Ali
+    </p>
+  </footer>
   
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="./live/OwlCarousel/owl.carousel.min.js"></script>
